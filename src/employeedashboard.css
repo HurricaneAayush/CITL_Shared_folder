@@ -1,0 +1,121 @@
+.dashboard-wrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.employee-section {
+  justify-content: center;
+}
+
+.main-content {
+  margin-top: 55px;
+}
+
+.personal-details {
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 2vw;
+  width: 60%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+/* Personal details container: make it fixed height and scrollable */
+.personal-details {
+  width: 48%; /* Set the width as per your design */
+  height: 570px; /* Set the fixed height for the container */
+  overflow-y: auto; /* Allow scrolling for vertical content */
+  padding: 15px;
+  border-radius: 10px;
+  width: 60%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-color: white;
+}
+
+/* Employee info */
+.employee-info {
+  margin-top: 10px;
+}
+
+.info-list {
+  margin-top: 10px;
+}
+
+/* Styles for each info item: labels on the left, values on the right */
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; /* Adds space between each item */
+}
+
+.info-label {
+  width: 40%; /* You can adjust this percentage as per your layout */
+}
+
+.info-value {
+  width: 60%;
+  text-align: right; /* Aligns the value text to the right */
+  color: rgb(64, 63, 63);
+}
+
+.employee-info h2 {
+  font-size: 24px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+.employee-info h3 {
+  color: rgb(15, 154, 147);
+  padding-top: 20px;
+}
+
+.employee-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.employee-info ul li {
+  margin-bottom: 8px;
+}
+
+.employee-info p {
+  text-align: center;
+  color: rgb(155, 160, 171);
+  margin-top: 1px;
+}
+
+/* Optional scroll bar styling (modern browsers) */
+.personal-details::-webkit-scrollbar {
+  width: 3px;
+}
+
+.personal-details::-webkit-scrollbar-thumb {
+  background-color: rgb(138, 241, 236);
+}
+
+/* Main employee section */
+.employee-section {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.news-calendar {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.employee-section img {
+  max-height: 100px; /* Set a maximum height */
+  width: auto; /* Keep the width proportional */
+  object-fit: contain; /* Ensures the image scales properly */
+  border-radius: 30px; /* Optional: Rounds the corners of the image */
+  display: block;
+  margin: 0 auto; /* Add spacing if necessary */
+}
+
+.calendar-section {
+  width: 90%;
+}

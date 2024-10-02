@@ -1,0 +1,199 @@
+/* .main-header {
+  width: 100%;
+  margin-left: 0px;
+  gap: 40%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+} */
+
+/* Container */
+.landing-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.landing-main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8px 5px 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Change this to fixed */
+  top: 0; /* Fix to the top of the viewport */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.logo {
+  padding-bottom: 0;
+  align-items: center;
+}
+
+.logo img {
+  width: 90px; /* Smaller logo */
+  height: auto;
+}
+
+.header-links {
+  display: flex;
+  gap: 30px;
+  border-radius: 6px;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+.header-links a:hover {
+  color: rgb(37, 37, 244);
+}
+
+.header-links .sign-in {
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.header-links .sign-in:hover {
+  background-color: rgb(37, 37, 244);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  box-shadow: 4px 3px 3px rgb(185, 183, 183);
+}
+
+.header-links a {
+  padding-top: 10px;
+  margin-right: 25px;
+}
+
+.landing-main-content {
+  margin-top: 10%;
+  margin-left: 0;
+  margin-bottom: 12%;
+}
+
+.landing-main-content h1 {
+  color: rgb(37, 37, 244);
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.landing-main-content p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.landing-main-content p a {
+  color: rgb(37, 37, 244);
+  text-decoration: none;
+}
+
+.auth-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.auth-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  background-color: white;
+  font-size: 15px;
+  cursor: pointer;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.auth-button:hover {
+  border-color: rgb(37, 37, 244);
+}
+
+.google-btn img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.google-btn img#logo {
+  height: 23px;
+  margin-right: 10px;
+}
+
+.email-section {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+span {
+  color: grey;
+}
+
+.email-input {
+  padding: 10px;
+  width: 280px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.email-btn {
+  padding: 10px 20px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.landing-footer {
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.footer-links span {
+  font-weight: bold;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  color: #999;
+  font-size: 12px;
+}
+
+.footer-copyright p {
+  margin: 0;
+  padding-top: 10px;
+}

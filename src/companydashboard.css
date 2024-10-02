@@ -1,0 +1,191 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: rgb(237, 247, 247); /*linear-gradient(135deg, #6a11cb, #2575fc)*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dashboard-container {
+  /* display: flex; */
+  height: 100%; /* Full viewport height */
+  overflow: hidden; /* Prevent horizontal scroll */
+  gap: 120px;
+}
+
+.sidebar-logo img {
+  width: 110px; /* Smaller logo */
+  height: auto;
+  margin-bottom: 5vh;
+}
+/* Add spacing between the sidebar items */
+.sidebar-nav ul {
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  list-style-type: none;
+}
+
+.sidebar-nav ul li a:hover {
+  font-size: 16px;
+}
+
+.sidebar-nav ul li.active a {
+  background-color: rgb(15, 154, 147);
+  color: white; /* Ensure text color changes for active item */
+  border-radius: 6px; /* Optional: To match the rounded highlight */
+  padding: 10px 8px;
+  margin: -5px 0;
+}
+
+.sidebar-nav ul li {
+  margin-bottom: 20px; /* Increase space between list items */
+}
+
+.sidebar-nav ul li:last-child {
+  margin-bottom: 0; /* Optional: Prevent extra space after the last item */
+}
+
+.sidebar-nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #000; /* Set link color */
+  font-weight: bold;
+  padding: 1vh;
+  display: block; /* Make links fill the li container */
+}
+
+.sidebar {
+  width: 11%;
+  background-color: rgb(168, 237, 234); /* Light cyan */
+  padding: 20px;
+  position: fixed; /* Make sidebar fixed */
+  height: 100vh; /* Full height for the sidebar */
+}
+
+.main-header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  gap: 60%;
+  margin-left: 14%;
+  width: 100%; /* Remaining width after the sidebar */
+  z-index: 100; /* Ensure it stays on top */
+  background-color: rgb(237, 216, 138);
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main-header .img {
+  margin-top: 0;
+}
+
+.main-content {
+  margin-top: 70px; /* Adjust to the height of the main header */
+  margin-left: 14%;
+  padding: 2%;
+  height: calc(100vh - 70px); /* Adjust for the header height */
+  overflow-y: auto;
+}
+
+.search-bar input {
+  width: 200px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.user-profile img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.welcome-section {
+  background-image: linear-gradient(
+    to right,
+    rgb(71, 163, 158),
+    rgb(196, 221, 221)
+  );
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.welcome-section p {
+  color: white;
+}
+
+.create-work-button {
+  background-color: #f5c854;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.create-work-button:hover {
+  color: black;
+  transform: translateY(-2px);
+  font-weight: bold;
+}
+
+.dashboard-overview {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 14px;
+}
+
+.overview-card {
+  padding: 20px;
+  border-radius: 10px;
+  width: 20%;
+  text-align: left;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.overview-title {
+  font-size: 14px;
+  color: #888;
+  padding-bottom: 3px;
+}
+
+.overview-value {
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+  width: 100%; /* Ensure consistent width */
+}
+
+.overview-value span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px; /* Adds space between number and image */
+  margin-top: 5px;
+}
+
+.overview-value img {
+  height: 42px;
+}
+
+.employee-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.employee-list,
+.calendar-section {
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 2vw;
+  width: 48%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
